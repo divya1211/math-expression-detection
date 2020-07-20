@@ -48,7 +48,7 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 
 - Every image is passed through easyOCR to get both bounding boxes and the text for each box.
 - All the non-math expressions text is removed using the trained BERT classifier. 
-- Non-maximal supression is appled to all the bounding boxes to combine intersecting windows. 
+- Non-maximal supression is applied to all the bounding boxes to combine intersecting windows. 
 - Plot the final boxes and save them in `bb` folder. 
 - Voila!
 
