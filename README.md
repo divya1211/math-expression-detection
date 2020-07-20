@@ -17,6 +17,14 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 - Non-maximal supression to combine multiple intersecting bounding-boxes together. 
 - Plot the bounding boxes over the images.
 
+## Code
+
+- `boundingbox.py`: Takes in image folder. Computes bounding box. Plots them. 
+- `train_classifier.py`: Takes in the annotated data exmaples. Trains a binary classifier on top of BERT. 
+- `classifier.py`: Loads up trained BERT classifier. Runs inference. 
+- `data.py`: Custom PyTorch Dataset class for Math Expressions. 
+- `non_maximal_supression.py`: Performs non maximal supression. [Credit](https://github.com/bruceyang2012/nms_python)
+
 
 ## What didn't work?
 
