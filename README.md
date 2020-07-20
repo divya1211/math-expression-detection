@@ -19,7 +19,7 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 
 ## Data
 
-- `data/train`: The MathWorksheetsOCR dataset. List of 50 worksheets hand annotated for the binary classification.
+- `data/train`: The MathWorksheetsOCR dataset. List of 50 worksheets hand annotated for the binary classification. Total number of expresisons 2332. Where Math expression are 1859 and non-math expressions are 473. The dataset is skewed with 80% math experssions becuase math worksheets have mostly math expressions. 
 - `image-dataset/bing-scrap-dataset`: 100 worksheets scraped from Bing. 
 - `image-dataset/worksheets`: Used these 10 exmaples for our development set. 
 - `image-dataset/handwritten`: Handwritten sheets provided. 
