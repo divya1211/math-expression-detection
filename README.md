@@ -44,6 +44,14 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 
 - Used [transformers](https://github.com/huggingface/transformers) to fine-tune `BertForSequenceClassification` on the MathWorksheetsOCR dataset.
 
+## How does the final detection work?
+
+- Every image is passed through easyOCR to get both bounding boxes and the text for each box.
+- All the non-math expressions text is removed using the trained BERT classifier. 
+- Non-maximal supression is appled to all the bounding boxes to combine intersecting windows. 
+- Plot the final boxes and save them in `bb` folder. 
+- Voila!
+
 
 
 ## What didn't work?
@@ -53,7 +61,7 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 
 
 
-## Futher Thoughts
+## Final Thoughts
 
 - A better approach to solve this problme would be from ground-up constructing an annotated dataset for these math worksheets. These annotations should be bounding-boxes. 
 - Perhaps, we can use Amazon Mechanical Turk to annotate different distribution of data. Example, hand-written, camera captured sheets, etc.
