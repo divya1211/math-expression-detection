@@ -1,0 +1,4 @@
+Text        Label
+--------  -------
+Sinx            1
+LX+ COSX        1

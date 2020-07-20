@@ -1,0 +1,26 @@
+Text                    Label
+--------------------  -------
+Given sin X                 1
+=                           1
+4                           1
+sin 2x= 2sin X COS X        1
+                            1
+                            1
+sin 2                       1
+= 2sin                      1
+*                           1
+                            1
+sin X=2 sin                 1
+sin X=2 sin                 1
+4                           1
+= 2                         1
+4                           1
+2                           1
+4                           1
+2                           1
+X                           1
+=                           1
+8                           1
+                            1
+sin                         1
+=                           1

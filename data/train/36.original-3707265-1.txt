@@ -1,0 +1,20 @@
+Text                    Label
+--------------------  -------
+3c                          0
+!0                          1
+ooooooooo                   0
+ccc                         1
+0                           1
+i=                          1
+cccc0                       0
+cacccccc0                   0
+10                          1
+z=                          1
+accnoooooo                  0
+ccccccQ                     0
+0                           1
+ooooonO                     0
+cccc                        0
+1o                          1
+:0                          1
+aoooooooo oooooonooo        0

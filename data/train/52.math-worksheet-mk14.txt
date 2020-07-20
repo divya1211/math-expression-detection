@@ -1,0 +1,29 @@
+Text                                                 Label
+-------------------------------------------------  -------
+Multiplication Maze                                      0
+Work the problems as you travel through the maze.        0
+If your answer is                                        0
+an odd number, you maybe going the wrong way!            0
+8 x 3 =                                                  1
+7x7 =                                                    1
+8 x 6 =                                                  1
+7x 5 =                                                   1
+7x6 =                                                    1
+7x 9                                                     1
+3 x 9 =                                                  1
+6 x 6 =                                                  1
+7x 3 =                                                   1
+5x 9 =                                                   1
+8 x 5 =                                                  1
+7x11 =                                                   1
+7x4 =                                                    1
+5x11 =                                                   1
+8x4 =                                                    1
+1X11 =                                                   1
+Fish!                                                    0
+gRoch                                                    0
+page                                                     0
+MMH14                                                    0
+HLearn. Iric.                                            0
+aavarar akshaets_aT-ag-hE3[                              0
+aunra5]15=355~65                                         0
