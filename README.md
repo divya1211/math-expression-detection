@@ -54,6 +54,12 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 - Plot the final boxes and save them in `bb` folder. 
 - Voila!
 
+## What did I observe?
+
+- The detection is working well even for difficut exmaples, where the expressions are parted into two lines because of non-maximal supression.
+- All the non-math text, instructions like "Solving Quadratic Equations", and question numbers like "2b.", "3)", any other irrelevant text at the end of the worksheet are removed.
+- The precision without the BERT classifier was low, becuase a number of non-math noise was included in the predictions. After using the BERT classifier, the preciiosn increased. 
+- I observed all these using qualative analysis. For quantative analysis, like computing precision/recall using IOU, ground truth bounding box for the data is required. 
 
 
 ## What didn't work?
