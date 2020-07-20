@@ -11,11 +11,19 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 ## How is it done?
 
 - Scraped data from Bing for the keyword "math worksheets" using [google-images-download](https://github.com/hardikvasa/google-images-download).
-- Annotated ~50 worksheets, assigning 0 to non-math expressions and 1 to math expressions.
+- Annotated ~50 worksheets, assigning 0 to non-math expressions and 1 to math expressions. Alias as MathWorksheetsOCR dataset.
 - Using the [CRAFT: Character-Region Awareness For Text detection](https://github.com/clovaai/CRAFT-pytorch) detect general purpose OCR. 
 - A trained binary classifier using BERT removes non-mathematical expressions using the annotated data.
 - Non-maximal supression to combine multiple intersecting bounding-boxes together. 
 - Plot the bounding boxes over the images.
+
+## Data
+
+- `data/train`: The MathWorksheetsOCR dataset. List of 50 worksheets hand annotated for the binary classification.
+- `image-dataset/bing-scrap-dataset`: 100 worksheets scraped from Bing. 
+- `image-dataset/worksheets`: Used these 10 exmaples for our development set. 
+- `image-dataset/handwritten`: Handwritten sheets provided. 
+
 
 ## Code
 
@@ -24,6 +32,18 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 - `classifier.py`: Loads up trained BERT classifier. Runs inference. 
 - `data.py`: Custom PyTorch Dataset class for Math Expressions. 
 - `non_maximal_supression.py`: Performs non maximal supression. [Credit](https://github.com/bruceyang2012/nms_python)
+
+## How was MathWorksheetsOCR created?
+
+- Scraped 50 worksheets from Bing. 
+- Used the [easyOCR](https://github.com/JaidedAI/EasyOCR) to recognize text from each worksheet. 
+- Hand annonated the recognized text as either 0 or 1. 
+- The final dataset size is, 
+
+## How was BERT classifer trained? 
+
+- Used [transformers](https://github.com/huggingface/transformers) to fine-tune `BertForSequenceClassification` on the MathWorksheetsOCR dataset.
+
 
 
 ## What didn't work?
