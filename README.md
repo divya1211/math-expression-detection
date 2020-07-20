@@ -5,7 +5,8 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 
 ## Examples
 
-[TODO]
+<img src="images/1.png" width="400"> <img src="images/2.png" width="400"> <img src="images/3.png" width="400"> <img src="images/4.png" width="400"> <img src="images/5.png" width="400"> <img src="images/6.png" width="500">
+
 
 
 ## How is it done?
@@ -43,6 +44,7 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 ## How was BERT classifer trained? 
 
 - Used [transformers](https://github.com/huggingface/transformers) to fine-tune `BertForSequenceClassification` on the MathWorksheetsOCR dataset.
+- The fine-tuned model is available at [this Google Drive link](https://drive.google.com/file/d/1eoYOSLR-V5MYI5gB7-wTvw7xjjYWt49D/view?usp=sharing).
 
 ## How does the final detection work?
 
