@@ -56,6 +56,7 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 
 ## What did I observe?
 
+- The results for 3 different datasets can be viewed at [image-dataset/bing-scrap-dataset/bb](image-dataset/bing-scrap-dataset/bb), [image-dataset/handwritten/bb](image-dataset/handwritten/bb), [image-dataset/worksheets/bb](image-dataset/worksheets/bb).
 - The detection is working well even for difficut exmaples, where the expressions are parted into two lines because of non-maximal supression.
 - All the non-math text, instructions like "Solving Quadratic Equations", and question numbers like "2b.", "3)", any other irrelevant text at the end of the worksheet are removed.
 - The precision without the BERT classifier was low, becuase a number of non-math noise was included in the predictions. After using the BERT classifier, the preciiosn increased. 
