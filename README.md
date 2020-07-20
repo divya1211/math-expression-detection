@@ -32,8 +32,9 @@ Detect mathematical expressions in worksheets and draw bounding boxes.
 - Used perplexity from GPT-2 to remove non-math expression. I assumed that math expression perplexity would be higher than non-math expressions. However, no significant difference observed between them. 
 
 
+
 ## Futher Thoughts
 
 - A better approach to solve this problme would be from ground-up constructing an annotated dataset for these math worksheets. These annotations should be bounding-boxes. 
 - Perhaps, we can use Amazon Mechanical Turk to annotate different distribution of data. Example, hand-written, camera captured sheets, etc.
-
+- Using IOU, intersection over union, to compute precision and recall of the bounding boxes. Since, our dataset was not annotated at the moment, we used human evaluation for the results.
